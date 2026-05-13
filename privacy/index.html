@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Política de Privacidade | MR FRANCO SERVICOS MEDICOS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{--primary:#1565a8;--primary-dark:#0f4d80;--primary-glow:#4da0e8;--bg-deep:#01060f;--bg-deeper:#010409;--bg-mid:#031020;--white:#f8f6f0;--white-dim:rgba(248,246,240,0.72);--font-display:'Raleway',serif;--font-body:'Open Sans',sans-serif}
+    html{scroll-behavior:smooth}body{font-family:var(--font-body);background:var(--bg-deep);color:var(--white);overflow-x:hidden}
+    ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg-deeper)}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:3px}
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:0 4vw;height:64px;background:rgba(0,0,0,0.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.07)}
+    .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .nav-badge{width:36px;height:36px;background:var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.1rem;color:white;font-weight:900}
+    .nav-name{font-family:var(--font-display);font-size:1.3rem;color:var(--white);letter-spacing:1px}.nav-name span{color:var(--primary-glow)}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{font-size:0.82rem;font-weight:500;color:var(--white-dim);text-decoration:none;letter-spacing:1px;text-transform:uppercase;transition:color 0.2s}.nav-links a:hover{color:var(--primary-glow)}
+    .page-header{padding:130px 4vw 70px;background:radial-gradient(ellipse 55% 50% at 60% 50%,color-mix(in srgb,#1565a8 22%,transparent) 0%,transparent 68%),linear-gradient(135deg,#010409 0%,#01060f 55%,#010409 100%);border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden}
+    .page-header::before{content:'';position:absolute;inset:0;background-image:linear-gradient(color-mix(in srgb,#1565a8 5%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,#1565a8 5%,transparent) 1px,transparent 1px);background-size:55px 55px;pointer-events:none}
+    .page-header-inner{position:relative;z-index:1;max-width:860px;margin:0 auto}
+    .page-header-tag{display:inline-flex;align-items:center;gap:8px;background:color-mix(in srgb,#1565a8 15%,transparent);border:1px solid color-mix(in srgb,#1565a8 45%,transparent);padding:0.3rem 0.9rem;border-radius:4px;font-size:0.73rem;font-weight:700;color:#4da0e8;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.2rem}
+    .page-header h1{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);color:var(--white);margin-bottom:0.8rem;line-height:1.1}
+    .page-header-cnpj{font-size:0.88rem;color:var(--white-dim);margin-top:0.5rem}
+    .page-header-cnpj strong{color:var(--primary-glow)}
+    .content{max-width:860px;margin:0 auto;padding:4rem 2rem}
+    .update-badge{display:inline-flex;align-items:center;gap:8px;background:color-mix(in srgb,#1565a8 10%,transparent);border:1px solid color-mix(in srgb,#1565a8 30%,transparent);padding:0.4rem 1rem;border-radius:4px;font-size:0.78rem;color:#4da0e8;margin-bottom:2.5rem}
+    .card{background:color-mix(in srgb,#1565a8 6%,#01060f);border:1px solid color-mix(in srgb,#1565a8 18%,transparent);border-radius:8px;padding:2rem;margin-bottom:1.5rem;transition:border-color 0.2s}
+    .card:hover{border-color:color-mix(in srgb,#1565a8 40%,transparent)}
+    .card-header{display:flex;align-items:center;gap:12px;margin-bottom:1rem}
+    .card-number{font-family:var(--font-display);font-size:0.75rem;font-weight:900;color:var(--primary-glow);letter-spacing:2px;text-transform:uppercase;background:color-mix(in srgb,#1565a8 15%,transparent);padding:0.2rem 0.6rem;border-radius:3px}
+    .card h2{font-family:var(--font-display);font-size:1.15rem;color:var(--white)}
+    .card p{font-size:0.92rem;color:var(--white-dim);line-height:1.75;margin-bottom:0.6rem}
+    .card p:last-child{margin-bottom:0}
+    .card ul{padding-left:1.4rem;margin-top:0.4rem}
+    .card ul li{font-size:0.92rem;color:var(--white-dim);line-height:1.75;margin-bottom:0.3rem}
+    .company-block{background:color-mix(in srgb,#1565a8 10%,#01060f);border-left:3px solid var(--primary);padding:1rem 1.2rem;border-radius:0 6px 6px 0;margin-top:0.8rem}
+    .company-block p{font-size:0.88rem;color:var(--white-dim);line-height:1.7}
+    .company-block strong{color:var(--white)}
+    footer{background:#010409;border-top:1px solid rgba(255,255,255,0.05);padding:50px 4vw 24px}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;margin-bottom:2rem}
+    .footer-brand{font-family:var(--font-display);font-size:1.4rem;color:var(--white);margin-bottom:0.8rem}.footer-brand span{color:#4da0e8}
+    .footer-desc{font-size:0.88rem;color:var(--white-dim);line-height:1.7}
+    .footer-col h4{font-size:0.75rem;color:#4da0e8;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem}.footer-col ul{list-style:none}.footer-col li{margin-bottom:0.5rem}.footer-col a{font-size:0.88rem;color:var(--white-dim);text-decoration:none;transition:color 0.2s}.footer-col a:hover{color:#4da0e8}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:1.2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem}
+    .footer-legal p{font-size:0.78rem;color:rgba(248,246,240,0.45);margin-bottom:2px}
+    .footer-policy-links{display:flex;gap:1.2rem}.footer-policy-links a{font-size:0.78rem;color:rgba(248,246,240,0.45);text-decoration:none;transition:color 0.2s}.footer-policy-links a:hover{color:#4da0e8}
+    @media(max-width:768px){.footer-top{grid-template-columns:1fr}.nav-links{display:none}}
+  </style>
+</head>
+<body>
+<nav id="navbar">
+  <a href="../" class="nav-logo">
+    <div class="nav-badge">M</div>
+    <span class="nav-name">MR <span>FRANCO SERVICOS MEDICOS</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../#servicos">Serviços</a></li>
+    <li><a href="../#sobre">Sobre</a></li>
+    <li><a href="../#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-header-tag">⚕️ Política de Privacidade</div>
+    <h1>Política de Privacidade</h1>
+    <p class="page-header-cnpj"><strong>MR FRANCO SERVICOS MEDICOS LTDA</strong> · CNPJ: <strong>48.311.107/0001-87</strong></p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="update-badge">📅 Última atualização: 23 de abril de 2026</div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number">01</span>
+      <h2>Informações Gerais</h2>
+    </div>
+    <p>Esta Política de Privacidade descreve como a <strong>MR FRANCO SERVICOS MEDICOS LTDA</strong> trata os dados pessoais coletados neste site, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+    <div class="company-block">
+      <p><strong>MR FRANCO SERVICOS MEDICOS LTDA</strong><br>
+      CNPJ: 48.311.107/0001-87<br>
+      R RUA RUI BARBOSA, 1432, CENTRO – TERRA RICA – PR – CEP: 87.890-000<br>
+      Telefone: (45) 9991-5093 · E-mail: MMFRANCO1998@GMAIL.COM</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number">02</span>
+      <h2>Dados Coletados</h2>
+    </div>
+    <p>Ao utilizar o formulário de contato deste site, podemos coletar os seguintes dados pessoais:</p>
+    <ul>
+      <li>Nome completo</li>
+      <li>Número de telefone</li>
+      <li>Endereço de e-mail</li>
+      <li>Informações sobre o tipo de atendimento ou procedimento desejado</li>
+      <li>Dados de identificação necessários para agendamento de consultas</li>
+      <li>Mensagens e conteúdo enviado voluntariamente pelo formulário de contato</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number">03</span>
+      <h2>Finalidade do Tratamento</h2>
+    </div>
+    <p>Os dados coletados são utilizados exclusivamente para as seguintes finalidades:</p>
+    <ul>
+      <li>Responder a solicitações de informação sobre consultas, procedimentos cirúrgicos e exames</li>
+      <li>Agendamento de atendimentos ambulatoriais e de pronto-socorro</li>
+      <li>Estabelecer contato para esclarecimento de dúvidas médicas e administrativas</li>
+      <li>Cumprimento de obrigações legais relacionadas à prestação de serviços de saúde</li>
+      <li>Melhoria contínua dos serviços prestados aos pacientes</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number">04</span>
+      <h2>Armazenamento e Segurança</h2>
+    </div>
+    <p>Os dados coletados são armazenados em ambiente seguro, com adoção de medidas técnicas e administrativas para proteção contra acesso não autorizado, alteração, divulgação ou destruição.</p>
+    <p>Os dados são mantidos pelo período necessário para atender às finalidades descritas nesta política e às exigências legais aplicáveis ao setor de saúde, podendo ser excluídos a pedido do titular, salvo obrigação legal de retenção.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number">05</span>
+      <h2>Compartilhamento de Dados</h2>
+    </div>
+    <p>A MR FRANCO SERVICOS MEDICOS LTDA não compartilha, vende, aluga ou cede seus dados pessoais a terceiros para fins comerciais.</p>
+    <p>O compartilhamento pode ocorrer exclusivamente nas seguintes situações:</p>
+    <ul>
+      <li>Cumprimento de obrigação legal ou regulatória</li>
+      <li>Ordem judicial ou requisição de autoridade competente</li>
+      <li>Prestadores de serviços essenciais à operação, sob cláusula de confidencialidade</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number">06</span>
+      <h2>Seus Direitos (LGPD)</h2>
+    </div>
+    <p>Nos termos da Lei nº 13.709/2018, você possui os seguintes direitos em relação aos seus dados pessoais:</p>
+    <ul>
+      <li><strong>Confirmação e acesso:</strong> saber se tratamos seus dados e acessá-los</li>
+      <li><strong>Correção:</strong> solicitar a correção de dados incompletos, inexatos ou desatualizados</li>
+      <li><strong>Anonimização, bloqueio ou eliminação:</strong> de dados desnecessários ou tratados em desconformidade</li>
+      <li><strong>Portabilidade:</strong> receber seus dados em formato estruturado</li>
+      <li><strong>Revogação do consentimento:</strong> a qualquer momento, sem prejuízo da licitude do tratamento anterior</li>
+      <li><strong>Oposição:</strong> se discordar de algum tratamento realizado</li>
+    </ul>
+    <p>Para exercer seus direitos, entre em contato pelo e-mail ou telefone indicados na seção 7.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number">07</span>
+      <h2>Contato do Responsável</h2>
+    </div>
+    <p>Para dúvidas, solicitações ou exercício de direitos relacionados à privacidade e proteção de dados, entre em contato com o responsável pelo tratamento:</p>
+    <div class="company-block">
+      <p><strong>MR FRANCO SERVICOS MEDICOS LTDA</strong><br>
+      E-mail: MMFRANCO1998@GMAIL.COM<br>
+      Telefone: (45) 9991-5093<br>
+      Endereço: R RUA RUI BARBOSA, 1432, CENTRO – TERRA RICA – PR – CEP: 87.890-000</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number">08</span>
+      <h2>Alterações desta Política</h2>
+    </div>
+    <p>Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças em nossas práticas de tratamento de dados ou alterações na legislação aplicável.</p>
+    <p>Recomendamos que você revise esta página periodicamente. A data da última atualização estará sempre indicada no topo desta página. O uso continuado do site após as alterações constitui aceitação da política atualizada.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">MR <span>FRANCO SERVICOS MEDICOS</span></div>
+      <p class="footer-desc">Atividade médica ambulatorial, pronto-socorro e procedimentos cirúrgicos em TERRA RICA – PR. CNPJ: 48.311.107/0001-87</p>
+    </div>
+    <div class="footer-col"><h4>Serviços</h4><ul><li><a href="../#servicos">Consultas Ambulatoriais</a></li><li><a href="../#servicos">Pronto-Socorro</a></li><li><a href="../#servicos">Procedimentos Cirúrgicos</a></li><li><a href="../#servicos">Exames Complementares</a></li></ul></div>
+    <div class="footer-col"><h4>Institucional</h4><ul><li><a href="../#sobre">Sobre Nós</a></li><li><a href="../#contato">Contato</a></li><li><a href="../privacy/">Política de Privacidade</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <p>© 2026 <strong>MR FRANCO SERVICOS MEDICOS LTDA</strong> - Todos os direitos reservados.</p>
+      <p>CNPJ: <strong>48.311.107/0001-87</strong> · R RUA RUI BARBOSA, 1432, CENTRO, TERRA RICA – PR · Tel: (45) 9991-5093</p>
+    </div>
+    <div class="footer-policy-links">
+      <a href="../privacy/">Privacidade</a>
+    </div>
+  </div>
+</footer>
+<script>
+  window.addEventListener('scroll',()=>{document.getElementById('navbar').style.background=window.scrollY>50?'rgba(0,0,0,0.99)':'rgba(0,0,0,0.9)';});
+</script>
+</body>
+</html>

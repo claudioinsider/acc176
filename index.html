@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="MR FRANCO SERVICOS MEDICOS LTDA - Atividade médica ambulatorial, pronto-socorro e procedimentos cirúrgicos em TERRA RICA/PR.">
+  <title>MR FRANCO SERVICOS MEDICOS | TERRA RICA/PR</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%231565a8'/><text y='.9em' font-size='72' font-family='serif' font-weight='900' fill='white' x='12'>M</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{--primary:#1565a8;--primary-dark:#0f4d80;--primary-glow:#4da0e8;--bg-deep:#01060f;--bg-deeper:#010409;--bg-mid:#031020;--white:#f8f6f0;--white-dim:rgba(248,246,240,0.72);--font-display:'Raleway',serif;--font-body:'Open Sans',sans-serif}
+    html{scroll-behavior:smooth}body{font-family:var(--font-body);background:var(--bg-deep);color:var(--white);overflow-x:hidden}
+    ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg-deeper)}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:3px}
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:0 4vw;height:64px;background:rgba(0,0,0,0.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.07)}
+    .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .nav-badge{width:36px;height:36px;background:var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.1rem;color:white;font-weight:900}
+    .nav-name{font-family:var(--font-display);font-size:1.3rem;color:var(--white);letter-spacing:1px}.nav-name span{color:var(--primary-glow)}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{font-size:0.82rem;font-weight:500;color:var(--white-dim);text-decoration:none;letter-spacing:1px;text-transform:uppercase;transition:color 0.2s}.nav-links a:hover{color:var(--primary-glow)}
+    .nav-cta{color:var(--primary)!important;border:1.5px solid var(--primary);padding:0.35rem 1rem;border-radius:4px;transition:background 0.2s,color 0.2s!important}.nav-cta:hover{background:var(--primary)!important;color:white!important}
+    #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:100px 4vw 70px}
+    .hero-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 55% 50% at 72% 48%,color-mix(in srgb,#1565a8 22%,transparent) 0%,transparent 68%),linear-gradient(135deg,#010409 0%,#01060f 55%,#010409 100%)}
+    .hero-grid{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(color-mix(in srgb,#1565a8 5%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,#1565a8 5%,transparent) 1px,transparent 1px);background-size:55px 55px}
+    .hero-glow{position:absolute;right:6%;top:50%;transform:translateY(-50%);width:380px;height:380px;background:radial-gradient(circle,color-mix(in srgb,#1565a8 28%,transparent) 0%,transparent 65%);border-radius:50%;pointer-events:none;z-index:0;animation:glow-pulse 3.5s ease-in-out infinite}
+    @keyframes glow-pulse{0%,100%{opacity:0.65;transform:translateY(-50%) scale(1)}50%{opacity:1;transform:translateY(-50%) scale(1.1)}}
+    .hero-content{position:relative;z-index:1;max-width:680px}
+    .hero-tag{display:inline-flex;align-items:center;gap:8px;background:color-mix(in srgb,#1565a8 15%,transparent);border:1px solid color-mix(in srgb,#1565a8 45%,transparent);padding:0.3rem 0.9rem;border-radius:4px;font-size:0.73rem;font-weight:700;color:#4da0e8;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.6rem}
+    .hero h1{font-family:var(--font-display);font-size:clamp(2.4rem,5.5vw,5rem);line-height:1.05;color:var(--white);margin-bottom:1.2rem}
+    .hero h1 .accent{color:#4da0e8;display:block}
+    .hero-desc{font-size:1rem;line-height:1.72;color:var(--white-dim);max-width:500px;margin-bottom:2.2rem}
+    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    .btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:white;font-size:0.88rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;padding:0.85rem 1.8rem;border:none;cursor:pointer;border-radius:4px;transition:background 0.2s,transform 0.15s}.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px)}
+    .btn-secondary{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,0.2);color:var(--white-dim);font-size:0.88rem;font-weight:500;letter-spacing:1px;text-transform:uppercase;text-decoration:none;padding:0.85rem 1.8rem;border-radius:4px;transition:border-color 0.2s,color 0.2s}.btn-secondary:hover{border-color:var(--primary-glow);color:var(--primary-glow)}
+    #servicos{padding:90px 4vw;background:#031020}
+    .section-label{font-size:0.72rem;font-weight:700;color:#4da0e8;letter-spacing:3px;text-transform:uppercase;margin-bottom:0.6rem}
+    .section-title{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);color:var(--white);margin-bottom:0.8rem}
+    .section-sub{font-size:1rem;color:var(--white-dim);max-width:540px;margin-bottom:3rem}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+    .service-card{background:color-mix(in srgb,#1565a8 8%,#01060f);border:1px solid color-mix(in srgb,#1565a8 20%,transparent);border-radius:8px;padding:1.8rem 1.5rem;transition:border-color 0.25s,transform 0.2s}.service-card:hover{border-color:#4da0e8;transform:translateY(-4px)}
+    .service-icon{font-size:2rem;margin-bottom:1rem}
+    .service-card h3{font-family:var(--font-display);font-size:1.15rem;color:var(--white);margin-bottom:0.5rem}
+    .service-card p{font-size:0.9rem;color:var(--white-dim);line-height:1.6}
+    #sobre{padding:90px 4vw;background:#01060f}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+    .about-badge{width:100%;max-width:380px;aspect-ratio:1;background:color-mix(in srgb,#1565a8 12%,#031020);border:1px solid color-mix(in srgb,#1565a8 25%,transparent);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:7rem}
+    .about-stats{display:flex;gap:2rem;margin-top:1.5rem;flex-wrap:wrap}
+    .stat{text-align:center}.stat-num{font-family:var(--font-display);font-size:2.2rem;color:#4da0e8}.stat-label{font-size:0.8rem;color:var(--white-dim);margin-top:2px}
+    #contato{padding:90px 4vw;background:#031020}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+    .contact-info p{font-size:0.95rem;color:var(--white-dim);line-height:1.7;margin-bottom:0.5rem}.contact-info strong{color:var(--white)}
+    .contact-item{display:flex;align-items:center;gap:10px;margin-bottom:1rem}
+    .contact-dot{width:8px;height:8px;border-radius:50%;background:#4da0e8;flex-shrink:0}
+    .contact-form{background:color-mix(in srgb,#1565a8 6%,#01060f);border-radius:8px;padding:2rem}
+    .form-group{margin-bottom:1.2rem}.form-group label{font-size:0.82rem;color:#4da0e8;letter-spacing:1px;text-transform:uppercase;margin-bottom:0.4rem;display:block}
+    .form-group input,.form-group textarea{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:var(--white);padding:0.7rem 1rem;border-radius:4px;font-family:var(--font-body);font-size:0.9rem;transition:border-color 0.2s;outline:none}.form-group input:focus,.form-group textarea:focus{border-color:#1565a8}.form-group textarea{height:90px;resize:vertical}
+    #formSuccess{display:none;color:#4da0e8;font-size:0.9rem;margin-top:0.8rem}
+    footer{background:#010409;border-top:1px solid rgba(255,255,255,0.05);padding:50px 4vw 24px}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;margin-bottom:2rem}
+    .footer-brand{font-family:var(--font-display);font-size:1.4rem;color:var(--white);margin-bottom:0.8rem}.footer-brand span{color:#4da0e8}
+    .footer-desc{font-size:0.88rem;color:var(--white-dim);line-height:1.7}
+    .footer-col h4{font-size:0.75rem;color:#4da0e8;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem}.footer-col ul{list-style:none}.footer-col li{margin-bottom:0.5rem}.footer-col a{font-size:0.88rem;color:var(--white-dim);text-decoration:none;transition:color 0.2s}.footer-col a:hover{color:#4da0e8}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:1.2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem}
+    .footer-legal p{font-size:0.78rem;color:rgba(248,246,240,0.45);margin-bottom:2px}
+    .footer-policy-links{display:flex;gap:1.2rem}.footer-policy-links a{font-size:0.78rem;color:rgba(248,246,240,0.45);text-decoration:none;transition:color 0.2s}.footer-policy-links a:hover{color:#4da0e8}
+    .modal-overlay{position:fixed;inset:0;z-index:2000;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.76);opacity:0;pointer-events:none;transition:opacity 0.25s}.modal-overlay.open{opacity:1;pointer-events:auto}
+    .modal-box{background:#031020;border:1px solid color-mix(in srgb,#1565a8 25%,transparent);border-radius:8px;padding:2.5rem;max-width:680px;width:90%;max-height:80vh;overflow-y:auto;position:relative}
+    .modal-box h2{font-family:var(--font-display);font-size:1.6rem;color:var(--white);margin-bottom:0.3rem}.modal-box h3{font-size:0.95rem;color:#4da0e8;margin:1.2rem 0 0.4rem}.modal-box p{font-size:0.88rem;color:var(--white-dim);line-height:1.7}
+    .modal-updated{font-size:0.78rem;color:rgba(248,246,240,0.45);margin-bottom:1.2rem}
+    .modal-company-data{background:color-mix(in srgb,#1565a8 10%,#01060f);border-left:3px solid #1565a8;padding:0.8rem 1rem;margin-bottom:1.2rem;border-radius:0 4px 4px 0}.modal-company-data p{font-size:0.85rem;color:var(--white-dim)}
+    .modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--white-dim);font-size:1.1rem;cursor:pointer;transition:color 0.2s}.modal-close:hover{color:var(--primary-glow)}
+    .modal-divider{border:none;border-top:1px solid rgba(255,255,255,0.08);margin:1.2rem 0}
+    @media(max-width:768px){.nav-links{display:none}.about-grid,.contact-grid,.footer-top{grid-template-columns:1fr}.about-badge{max-width:200px;font-size:5rem}}
+  </style>
+</head>
+<body>
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-badge">M</div>
+    <span class="nav-name">MR <span>FRANCO SERVICOS MEDICOS</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#contato" class="nav-cta">Fale Conosco</a></li>
+  </ul>
+</nav>
+<section id="hero">
+  <div class="hero-bg"></div><div class="hero-grid"></div><div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-tag">🏥 Serviços Médicos</div>
+    <h1>MR<span class="accent">FRANCO SERVICOS MEDICOS</span></h1>
+    <p class="hero-desc">A MR Franco Serviços Médicos Ltda é especializada em atividade médica ambulatorial restrita a consultas, pronto-socorro, procedimentos cirúrgicos e exames complementares, atendendo pacientes em Terra Rica – PR.</p>
+    <div class="hero-actions">
+      <a href="#contato" class="btn-primary">⚕️ Fale Conosco</a>
+      <a href="#servicos" class="btn-secondary">Ver Serviços →</a>
+    </div>
+  </div>
+</section>
+<section id="servicos">
+  <p class="section-label">O que oferecemos</p>
+  <h2 class="section-title">Nossos Serviços</h2>
+  <p class="section-sub">Conheça as soluções que a MR oferece para você.</p>
+  <div class="services-grid">
+    <div class="service-card"><div class="service-icon">🏥</div><h3>Consultas Ambulatoriais</h3><p>Atendimento especializado em consultas ambulatoriais com qualidade e dedicação.</p></div><div class="service-card"><div class="service-icon">🏥</div><h3>Pronto-Socorro</h3><p>Atendimento especializado em pronto-socorro com qualidade e dedicação.</p></div><div class="service-card"><div class="service-icon">🏥</div><h3>Procedimentos Cirúrgicos</h3><p>Atendimento especializado em procedimentos cirúrgicos com qualidade e dedicação.</p></div><div class="service-card"><div class="service-icon">🏥</div><h3>Exames Complementares</h3><p>Atendimento especializado em exames complementares com qualidade e dedicação.</p></div>
+  </div>
+</section>
+<section id="sobre">
+  <div class="about-grid">
+    <div class="about-badge">⚕️</div>
+    <div>
+      <p class="section-label">Quem somos</p>
+      <h2 class="section-title">Sobre a MR</h2>
+      <p class="section-sub">A MR Franco Serviços Médicos Ltda é especializada em atividade médica ambulatorial restrita a consultas, pronto-socorro, procedimentos cirúrgicos e exames complementares, atendendo pacientes em Terra Rica – PR.</p>
+      <div class="about-stats">
+        <div class="stat"><div class="stat-num">ATIVA</div><div class="stat-label">Situação Cadastral</div></div>
+        <div class="stat"><div class="stat-num">ME</div><div class="stat-label">Porte da Empresa</div></div>
+        <div class="stat"><div class="stat-num">2022</div><div class="stat-label">Ano de Abertura</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contato">
+  <p class="section-label">Entre em contato</p>
+  <h2 class="section-title">Fale Conosco</h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item"><div class="contact-dot"></div><p><strong>Endereço:</strong> R RUA RUI BARBOSA, 1432, CENTRO, TERRA RICA – PR</p></div>
+      <div class="contact-item"><div class="contact-dot"></div><p><strong>CEP:</strong> 87.890-000</p></div>
+      <div class="contact-item"><div class="contact-dot"></div><p><strong>Telefone:</strong> (45) 9991-5093</p></div>
+      <div class="contact-item"><div class="contact-dot"></div><p><strong>E-mail:</strong> MMFRANCO1998@GMAIL.COM</p></div>
+      <div class="contact-item"><div class="contact-dot"></div><p><strong>CNPJ:</strong> 48.311.107/0001-87</p></div>
+    </div>
+    <div class="contact-form">
+      <form onsubmit="handleSubmit(event)">
+        <div class="form-group"><label>Nome</label><input type="text" placeholder="Seu nome completo" required></div>
+        <div class="form-group"><label>Telefone</label><input type="tel" placeholder="(00) 00000-0000"></div>
+        <div class="form-group"><label>Mensagem</label><textarea placeholder="Como podemos ajudá-lo?"></textarea></div>
+        <button type="submit" class="btn-primary" style="width:100%;justify-content:center">🏥 Enviar Mensagem</button>
+        <p id="formSuccess">✓ Mensagem enviada com sucesso!</p>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">MR <span>FRANCO SERVICOS MEDICOS</span></div>
+      <p class="footer-desc">Atividade médica ambulatorial, pronto-socorro e procedimentos cirúrgicos em TERRA RICA – PR. CNPJ: 48.311.107/0001-87</p>
+    </div>
+    <div class="footer-col"><h4>Serviços</h4><ul><li><a href='#servicos'>Consultas Ambulatoriais</a></li><li><a href='#servicos'>Pronto-Socorro</a></li><li><a href='#servicos'>Procedimentos Cirúrgicos</a></li><li><a href='#servicos'>Exames Complementares</a></li></ul></div>
+    <div class="footer-col"><h4>Institucional</h4><ul>
+      <li><a href="#sobre">Sobre Nós</a></li><li><a href="#contato">Contato</a></li>
+      <li><a href="#" onclick="openModal('privacy')">Política de Privacidade</a></li>
+      <li><a href="#" onclick="openModal('terms')">Termos de Uso</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <p>© 2026 <strong>MR FRANCO SERVICOS MEDICOS LTDA</strong> - Todos os direitos reservados.</p>
+      <p>CNPJ: <strong>48.311.107/0001-87</strong> · R RUA RUI BARBOSA, 1432, CENTRO, TERRA RICA – PR, CEP: 87.890-000 · Tel: (45) 9991-5093</p>
+    </div>
+    <div class="footer-policy-links">
+      <a href="#" onclick="openModal('privacy')">Privacidade</a>
+      <a href="#" onclick="openModal('terms')">Termos</a>
+    </div>
+  </div>
+</footer>
+<div class="modal-overlay" id="modal-privacy">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('privacy')">✕</button>
+    <h2>Política de Privacidade</h2><p class="modal-updated">Última atualização: abril de 2026</p>
+    <div class="modal-company-data"><p><strong>MR FRANCO SERVICOS MEDICOS LTDA</strong> | CNPJ: 48.311.107/0001-87<br>R RUA RUI BARBOSA, 1432 – CENTRO – TERRA RICA – PR – CEP: 87.890-000<br>E-mail: MMFRANCO1998@GMAIL.COM | Tel: (45) 9991-5093</p></div>
+    <h3>1. Quem somos</h3><p>A MR FRANCO SERVICOS MEDICOS LTDA, CNPJ 48.311.107/0001-87, com sede em R RUA RUI BARBOSA, 1432, CENTRO, TERRA RICA – PR, é responsável pelo tratamento dos dados pessoais coletados neste site.</p>
+    <h3>2. Dados coletados</h3><p>Nome, telefone, e-mail e informações sobre a solicitação feita pelo formulário de contato.</p>
+    <h3>3. Finalidade</h3><p>Responder solicitações e estabelecer contato comercial.</p>
+    <h3>4. Compartilhamento</h3><p>Não compartilhamos, vendemos ou cedemos seus dados a terceiros.</p>
+    <h3>5. Seus direitos (LGPD)</h3><p>Solicite acesso, correção ou exclusão dos seus dados pelo e-mail MMFRANCO1998@GMAIL.COM.</p>
+    <h3>6. Contato</h3><p>MMFRANCO1998@GMAIL.COM | (45) 9991-5093</p>
+    <hr class="modal-divider"><p style="font-size:0.78rem;color:rgba(248,246,240,0.45)">© 2026 MR FRANCO SERVICOS MEDICOS LTDA – CNPJ 48.311.107/0001-87</p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-terms">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('terms')">✕</button>
+    <h2>Termos de Uso</h2><p class="modal-updated">Última atualização: abril de 2026</p>
+    <div class="modal-company-data"><p><strong>MR FRANCO SERVICOS MEDICOS LTDA</strong> | CNPJ: 48.311.107/0001-87<br>R RUA RUI BARBOSA, 1432 – CENTRO – TERRA RICA – PR – CEP: 87.890-000<br>E-mail: MMFRANCO1998@GMAIL.COM | Tel: (45) 9991-5093</p></div>
+    <h3>1. Aceitação</h3><p>Ao acessar este site, você concorda com os presentes Termos de Uso.</p>
+    <h3>2. Sobre a empresa</h3><p>Site pertencente à MR FRANCO SERVICOS MEDICOS LTDA, CNPJ 48.311.107/0001-87, situação ATIVA, atuante em Atividade médica ambulatorial, pronto-socorro e procedimentos cirúrgicos.</p>
+    <h3>3. Uso do site</h3><p>Finalidade exclusivamente informativa e comercial.</p>
+    <h3>4. Propriedade intelectual</h3><p>Todo conteúdo é de propriedade da MR FRANCO SERVICOS MEDICOS LTDA e não pode ser reproduzido sem autorização.</p>
+    <h3>5. Foro</h3><p>Comarca de TERRA RICA – PR.</p>
+    <hr class="modal-divider"><p style="font-size:0.78rem;color:rgba(248,246,240,0.45)">© 2026 MR FRANCO SERVICOS MEDICOS LTDA – CNPJ 48.311.107/0001-87</p>
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll',()=>{document.getElementById('navbar').style.background=window.scrollY>50?'rgba(0,0,0,0.99)':'rgba(0,0,0,0.9)';});
+  function handleSubmit(e){e.preventDefault();const btn=e.target.querySelector('button[type="submit"]');btn.textContent='Enviando...';btn.disabled=true;setTimeout(()=>{document.getElementById('formSuccess').style.display='block';btn.innerHTML='🏥 Enviar Mensagem';btn.disabled=false;e.target.reset();setTimeout(()=>document.getElementById('formSuccess').style.display='none',4000);},1000);}
+  function openModal(id){event.preventDefault();document.getElementById('modal-'+id).classList.add('open');document.body.style.overflow='hidden';}
+  function closeModal(id){document.getElementById('modal-'+id).classList.remove('open');document.body.style.overflow='';}
+  document.querySelectorAll('.modal-overlay').forEach(m=>{m.addEventListener('click',e=>{if(e.target===m){m.classList.remove('open');document.body.style.overflow='';}});});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal-overlay.open').forEach(m=>{m.classList.remove('open');document.body.style.overflow='';});});
+</script>
+</body>
+</html>
